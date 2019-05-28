@@ -29,7 +29,7 @@ exports.sendNotifications = functions.database.ref('/audiomessages/{audiomsgId}'
             });
             return admin.messaging().sendToDevice(notifTokens, payLoad);
         } else {
-            console.log("Snapshot has no children");
+            console.log("Snapshot has no children. Sorry bro");
             return;
         }  
 
